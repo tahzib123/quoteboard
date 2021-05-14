@@ -1,7 +1,7 @@
-import express from 'express';
+import express, {Request, Response} from 'express';
 export const router  = express.Router();
 
 
-router.get('/', async (req: any, res) => {
+router.get('/', async (req: Request, res: Response) => {
     res.json({});
 });
